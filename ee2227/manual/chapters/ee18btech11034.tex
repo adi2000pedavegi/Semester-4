@@ -31,45 +31,38 @@ Now substitute $\omega = 0$
 \lim_{\omega\to\ 0} G(j\omega) = \frac{1-j\omega}{4+2j\omega} = \frac{1}{4}\angle 0 
 \end{align}
 
-so from this  at $\omega = 0$ $\angle G(j\omega) = 0$
-and so from this  at $\omega = \infty$ $\angle G(j\omega)  =-180$     
+\begin{align}
+\angle (G(j\omega)) = \tan^{-1}(\frac{-\omega}{1}) - \tan^{-1}(\frac{\omega}{2})
+\end{align}
+
+so from this  at $\omega = 0$ $\angle G(j\omega) = 0$ and at $\omega = \infty$ $\angle G(j\omega)  =-180$     
 
 
 \begin{align}
 \mid(G(j\omega))\mid = \frac{\sqrt{1+{\omega}^2}}{\sqrt{16+{4\omega}^2}} 
 \end{align}
 
-when $\omega = 0$
-\begin{align}
-\mid(G(j\omega))\mid = \frac{1}{4}
-\end{align}
-
-when $\omega = \infty$
-\begin{align}
-\mid(G(j\omega))\mid = \frac{1}{2}
-\end{align}
-
+when $\omega = 0$ $\mid(G(j\omega))\mid = \frac{1}{4}$ and at when $\omega = \infty$ $\mid(G(j\omega))\mid = \frac{1}{2}$
 
 Hence,magnitude should be every time positive.
-So,we have to plot first 0.25 then we have to turn {-180} degrees to that point i.e {180} degrees clockwise(in this case)
+
+
+So,we have to plot first 0.25 then we have to turn {-180} degrees to that point i.e {180} degrees clockwise(in this case).
+
 \bigskip
 
-\item Now Plot the Polar Plot 1 from $\omega=0 to \infty$
+Now Plot the Polar Plot 1 from $\omega=0$ to $\infty$
 \begin{figure}[!h]
-  \includegraphics[width=\columnwidth]{./figs/image2.eps}
+\centering
+\includegraphics[width=\columnwidth]{./figs/image2.eps}
 \end{figure}
 
-\item Draw the Mirror image of the Polar Plot 1.
+Draw the Mirror image of the Polar Plot 1.
 \begin{figure}[!h]
-  \includegraphics[width=\columnwidth]{./figs/image1.eps}
+\centering
+\includegraphics[width=\columnwidth]{./figs/image1.eps}
  
 \end{figure}
-
-
-\item Find the points where $G(j\omega)$ intersects the real and imaginary axes(if needed) and then locate the given co-ordinate
-
-
-
 
     $$Put\,s=Re^{j\theta}$$
     $$\lim_{R\to \infty}\,G(Re^{j\theta})=\frac{1-Re^{j\theta}}{4+2Re^{j\theta}}=\frac{-1}{2}$$ \\
@@ -82,18 +75,13 @@ So,we have to plot first 0.25 then we have to turn {-180} degrees to that point 
     
 \begin{figure}[!h]
   \includegraphics[width=\columnwidth]{./figs/pythonnyquistplot.eps}
- 
-\end{figure}
+ \end{figure}
 
+As from the observed plot the co-ordinate -1 + j0 is outside the contour.
 
-
-
-As from the observed plot the co-ordinate -1 + j0 is outside the contour
 
 \bigskip
 
+
 Hence,the number of encirclements around the the given co-ordinate is zero.
-
-
-
 \end{enumerate}
