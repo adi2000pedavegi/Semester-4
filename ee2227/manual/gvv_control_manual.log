@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.4.12)  16 APR 2020 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.4.12)  17 APR 2020 23:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1164,11 +1164,12 @@ Package multicol Warning: May not work with the twocolumn option on input line
 ) (/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-No file gvv_control_manual.aux.
+(./gvv_control_manual.aux)
 \openout1 = `gvv_control_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 87.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 87.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
@@ -1245,6 +1246,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 87.
 LaTeX Info: Redefining \pageref on input line 87.
 LaTeX Info: Redefining \nameref on input line 87.
+
+(./gvv_control_manual.out) (./gvv_control_manual.out)
 \@outlinefile=\write4
 \openout4 = `gvv_control_manual.out'.
 
@@ -1288,50 +1291,68 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 221.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
+(./gvv_control_manual.toc)
 \tf@toc=\write5
 \openout5 = `gvv_control_manual.toc'.
 
+ (./chapters/ee18btech11034.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
-(./chapters/ee18btech11034.tex
-File: ./figs/image2.eps Graphic file (type eps)
- <./figs/image2.eps>
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: ./figs/image1.eps Graphic file (type eps)
-<./figs/image1.eps> [1
+[1
 
 
 ]
-File: ./figs/pythonnyquistplot.eps Graphic file (type eps)
- <./figs/pythonnyquistplot.eps>)
-Underfull \vbox (badness 5756) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 47--52
 
- [2]
+ []
+
+File: ./figs/image2.eps Graphic file (type eps)
+<./figs/image2.eps>
+File: ./figs/image1.eps Graphic file (type eps)
+ <./figs/image1.eps>
+Overfull \hbox (24.0pt too wide) in paragraph at lines 53--57
+[] 
+ []
+
+
+Overfull \hbox (24.0pt too wide) in paragraph at lines 53--57
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
+
+ []
+
+
+Underfull \vbox (badness 1275) has occurred while \output is active []
+
+File: ./figs/pythonnyquistplot.eps Graphic file (type eps)
+
+<./figs/pythonnyquistplot.eps>
+Overfull \hbox (24.0pt too wide) in paragraph at lines 66--72
+[] 
+ []
+
+) [2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
-
-(./gvv_control_manual.aux)
+ (./gvv_control_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 310.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
-
-
-Package rerunfilecheck Warning: File `gvv_control_manual.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `gvv_control_manual.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0818CDA015410C339AE8F41E8BAF2E6F;1608.
+Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
+(rerunfilecheck)             Checksum: 0818CDA015410C339AE8F41E8BAF2E6F;1608.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
  ) 
 Here is how much of TeX's memory you used:
- 31609 strings out of 492983
- 675332 string characters out of 6134922
- 893602 words of memory out of 5000000
- 34593 multiletter control sequences out of 15000+600000
+ 31648 strings out of 492983
+ 675954 string characters out of 6134922
+ 894039 words of memory out of 5000000
+ 34624 multiletter control sequences out of 15000+600000
  68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,13n,67p,510b,888s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (2 pages, 19536 bytes).
+Output written on gvv_control_manual.dvi (2 pages, 30156 bytes).
