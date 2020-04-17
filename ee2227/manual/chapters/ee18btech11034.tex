@@ -3,8 +3,8 @@
 \item The number of directions and encirclements around the point -1+j0 in the complex plane by the Nyquist plot of $G(s) = \frac{1-s}{4+2s}$\\
 
 \solution
-First,we need to draw the polar plot of given G(S).
-In the polar plot,substitute s = $j\omega$
+Draw the polar plot of given G(S).
+In the polar plot,substitute s = $j\omega$ evaluate magnitude and phase at $\omega = 0$ and $\omega = \infty$
 
 \begin{align}
 G(j\omega) = \frac{1-j\omega}{4+2j\omega} 
@@ -21,12 +21,9 @@ G(j\omega) = \frac{1-j\omega}{4+2j\omega}
 \begin{align}
 \lim_{\omega\to\infty} G(j\omega) = \frac{-1}{2}\angle 0  
 \end{align}
-
 \begin{center}
 which is equal to $\frac{1}{2}\angle{-180}$   
 \end{center}
-Now substitute $\omega = 0$
-
 \begin{align}
 \lim_{\omega\to\ 0} G(j\omega) = \frac{1-j\omega}{4+2j\omega} = \frac{1}{4}\angle 0 
 \end{align}
@@ -48,17 +45,10 @@ when $\omega = 0$ $\mid(G(j\omega))\mid = \frac{1}{4}$
 \\
 and at  $\omega = \infty$ $\mid(G(j\omega))\mid = \frac{1}{2}$
 \\
-So,we have to plot first 0.25 on positive x-axis then we have to turn {-180} degrees from that point i.e {180} degrees clockwise(in this case).\\
-
-Plot the Polar Plot from $\omega=0$ to $\infty$ \\
-\includegraphics[width=\columnwidth]{./figs/image2.eps}\\
-Draw the Mirror image of the Polar Plot.\\
-\includegraphics[width=\columnwidth]{./figs/image1.eps}\\
-
+Plot first 0.25 on positive x-axis then turn {-180} degrees from that point i.e {180} degrees clockwise(in this case).\\
 \begin{center}
 Substitute $s = Re^{j\theta}$
 \end{center}
-
 \begin{align}
 \lim_{R\to \infty}\,G(Re^{j\theta})=\frac{1-Re^{j\theta}}{4+2Re^{j\theta}}=\frac{-1}{2}  
 \end{align}
