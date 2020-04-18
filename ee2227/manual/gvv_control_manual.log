@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.4.12)  18 APR 2020 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.4.12)  18 APR 2020 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1164,11 +1164,12 @@ Package multicol Warning: May not work with the twocolumn option on input line
 ) (/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-No file gvv_control_manual.aux.
+(./gvv_control_manual.aux)
 \openout1 = `gvv_control_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 87.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 87.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
@@ -1245,12 +1246,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 87.
 LaTeX Info: Redefining \pageref on input line 87.
 LaTeX Info: Redefining \nameref on input line 87.
+
+(./gvv_control_manual.out) (./gvv_control_manual.out)
 \@outlinefile=\write4
 \openout4 = `gvv_control_manual.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 \c@lstlisting=\count199
 \c@theorem=\count266
@@ -1261,6 +1260,7 @@ Package hyperref Warning: Rerun to get /PageLabels entry.
 \c@rem=\count271
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 221.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 221.
+
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
@@ -1288,11 +1288,11 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 221.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
+(./gvv_control_manual.toc)
 \tf@toc=\write5
 \openout5 = `gvv_control_manual.toc'.
 
-
-(./chapters/ee18btech11034.tex
+ (./chapters/ee18btech11034.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1318,6 +1318,10 @@ LaTeX Warning: Command \j invalid in math mode on input line 10.
 
 LaTeX Warning: Command \j invalid in math mode on input line 10.
 
+[1
+
+
+]
 
 LaTeX Warning: Command \j invalid in math mode on input line 15.
 
@@ -1366,8 +1370,8 @@ LaTeX Warning: Command \j invalid in math mode on input line 33.
 
 LaTeX Warning: Command \j invalid in math mode on input line 34.
 
-File: ./figs/pythonnyquistplot.eps Graphic file (type eps)
-<./figs/pythonnyquistplot.eps>
+File: ./figs/ee18btech11034.eps Graphic file (type eps)
+<./figs/ee18btech11034.eps>
 Underfull \hbox (badness 5064) in paragraph at lines 33--39
 \OT1/txr/m/n/12 As there are no $\OML/txmi/m/it/12 e[]$ \OT1/txr/m/n/12 terms. 
 There will
@@ -1394,40 +1398,27 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 33--39
 []
  []
 
-
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1
-
-
-])
+ [2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
-
-[2
-
-]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
- (./gvv_control_manual.aux)
+
+(./gvv_control_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 310.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
-
-
-Package rerunfilecheck Warning: File `gvv_control_manual.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `gvv_control_manual.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0818CDA015410C339AE8F41E8BAF2E6F;1608.
+Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
+(rerunfilecheck)             Checksum: 0818CDA015410C339AE8F41E8BAF2E6F;1608.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
  ) 
 Here is how much of TeX's memory you used:
- 31601 strings out of 492983
- 675180 string characters out of 6134922
- 893602 words of memory out of 5000000
- 34587 multiletter control sequences out of 15000+600000
+ 31637 strings out of 492983
+ 675742 string characters out of 6134922
+ 894039 words of memory out of 5000000
+ 34616 multiletter control sequences out of 15000+600000
  68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,13n,67p,510b,888s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (2 pages, 17832 bytes).
+Output written on gvv_control_manual.dvi (2 pages, 28884 bytes).
