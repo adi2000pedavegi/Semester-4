@@ -3,39 +3,66 @@
 \item The number of directions and encirclements around the point -1+j0 in the complex plane by the Nyquist plot of $G(s) = \frac{1-s}{4+2s}$\\
 
 \solution
-Substitute s = $\j\omega$ evaluate magnitude and phase at $\omega = 0$ and $\omega = \infty$
-
+Substitute s = $\j\omega$ evaluate magnitude and phase from $\omega = -\infty$ to $\omega = \infty$
 \begin{align}
 G\brak{\j\omega} &= \frac{1-\j\omega}{4+2\j\omega} 
 \end{align}
 
-
+\item Phase of G\brak{\j\omega}
+\begin{align}
+\angle G\brak{\j\omega} = \angle G\brak{\j\omega}_{num} - \angle G\brak{\j\omega}_{den}
+\end{align}
 \begin{align}
 \angle G\brak{\j\omega} &= \tan^{-1}\brak{\frac{-\omega}{1}} - \tan^{-1}\brak{\frac{\omega}{2}}
 \end{align}
+At $\omega = 0$ 
+\begin{multline}
+\angle G\brak{\j\omega} = \tan^{-1}\brak{0} - \tan^{-1}\brak{0} = 0
+\end{multline}
+At $\omega = \infty$ 
+\begin{multline}
+\angle G\brak{\j\omega} = \tan^{-1}\brak{-\infty} - \tan^{-1}\brak{\infty} = -180
+\end{multline}
+At $\omega = -\infty$ 
+\begin{multline}
+\angle G\brak{\j\omega} = \tan^{-1}\brak{\infty} - \tan^{-1}\brak{-\infty} = 180
+\end{multline}
 
-so from this  at $\omega = 0$ $\angle G\brak{\j\omega} = 0$ 
-
-and at $\omega = \infty$ $\angle G\brak{\j\omega}  =-180$  
-
+\item Magnitude of G\brak{\j\omega}
 \begin{align}
 \abs{G\brak{\j\omega}} &= \frac{\sqrt{1+{\omega}^2}}{\sqrt{16+{4\omega}^2}} 
 \end{align}
+At $\omega = 0$ 
+\begin{align}
+    \abs{G\brak{\j\omega}} &= \frac{1}{4}
+\end{align}
+At $\omega = \infty$ 
+\begin{align}
+    \abs{G\brak{\j\omega}} &= \frac{1}{2}
+\end{align}
+At $\omega = -\infty$ 
+\begin{align}
+    \abs{G\brak{\j\omega}} &= \frac{1}{2}
+\end{align}
 
-when $\omega = 0$ $\abs{G\brak{\j\omega}} = \frac{1}{4}$ 
+\item Nyquist plotting\\
+\solution
 
-and at  $\omega = \infty$ $\abs{G\brak{\j\omega}} = \frac{1}{2}$
+From $\omega = 0$ to $\omega = \infty$ the path is
+$\frac{1}{4}\angle0$ to $\frac{1}{2}\angle-180$
+\\
+From $\omega = -\infty$ to $\omega = 0$ the path is
+$\frac{1}{2}\angle180$ to $\frac{1}{4}\angle0$
 
-Plot first 0.25 on positive x-axis then turn {-180} degrees from that point i.e {180} degrees clockwise(in this case).\\
 Substitute $s = Re^{\j\theta}$
 \begin{align}
 \lim_{R\to \infty}\,G\brak{Re^{\j\theta}} &= \frac{1-Re^{\j\theta}}{4+2Re^{\j\theta}}=\frac{-1}{2}  
 \end{align}
 As there are no $e^{\j\theta}$ terms.
 There will be no enclosed Nyquist path here.
-So, for this Transfer function $G(s)$,the Nyquist plot is the the Polar plot and its mirror image with respect to real axis.
-\includegraphics[width=\columnwidth]{./figs/ee18btech11034.eps}
-As from the observed plot the co-ordinate -1 + j0 is outside the contour.
+The Nyquist plot is the the Polar plot drawn by varying $\omega$ from $-\infty$ to $\infty$.
 
-Hence,the number of encirclements around the the given co-ordinate is zero.
+\includegraphics[width=\columnwidth]{./figs/ee18btech11034.eps}
+
+Hence,the number of encirclements of -1+j0 is zero.
 \end{enumerate}
