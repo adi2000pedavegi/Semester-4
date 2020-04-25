@@ -1,0 +1,23 @@
+\tikzset{
+        block/.style = {draw, rectangle,
+            minimum height=1cm,
+            minimum width=2cm},
+        input/.style = {coordinate,node distance=1cm},
+        output/.style = {coordinate,node distance=4cm},
+        arrow/.style={draw, -latex,node distance=2cm},
+        pinstyle/.style = {pin edge={latex-, black,node distance=2cm}},
+        sum/.style = {draw, circle, node distance=1cm},
+}
+
+\begin{tikzpicture}[node distance=2.5cm,auto,>=latex']
+  \node [input, name=input] {};
+  \node [sum, right of=input] (sum) {};
+  \node [block, right of = sum] (block1) {$G_c(s)$};
+  \node [block, right of = block1] (block2) {$G(s)$};
+  \node [output, right of= block2] (output) {};
+  \draw [->] (input) -- node {$R(s)\ +$} (sum);
+  \draw [->] (sum) -- node {} (block1);
+  \draw [->] (block1) -- node {} (block2);
+  \draw [->] (block2) -- node [name =y] {$Y(s)$} (output);
+  \draw [->] (y) -- ++ (0,-2) -| node [pos=0.99] {$-$} (sum);
+\end{tikzpicture}
