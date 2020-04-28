@@ -1,3 +1,7 @@
+#Code by P.Aditya
+#April 28th,2020
+#Released under GNU GPL
+
 import control
 import matplotlib.pyplot as plt
 import numpy as np
