@@ -140,4 +140,131 @@ Below is the code for computations
 codes/ee18btech11034/ee18btech11034.py
 \end{lstlisting}
 
+\item Circuit design for part 1
+
+As given op-amp is in non-inverting configuration and having a pole at $f_{p} = 10$ Hz
+
+The transfer function of op-amp is
+\begin{align}
+    G_{1}\brak{s} = \frac{10^{5}}{1+\frac{s}{2\pi \times 10}}
+\label{eq:ee18btech11034_5}
+\end{align}
+Required $G(s)$
+\begin{align}
+    G\brak{s} = G_{1}\brak{s}\frac{1}{1+\frac{s}{2\pi \times 10^{4}}}
+\end{align}
+So for the error second pole we cascade a RC circuit
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth/2}{!}{\input{./figs/ee18btech11034/ee18btech11034_figa.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11034_figa}
+\end{figure}
+\begin{align}
+\frac{V_{out}}{V_{in}} = \frac{I \times \frac{1}{Cs}}{I \times \brak{R+\frac{1}{Cs}}}
+\implies \frac{1}{1+sCR}
+\end{align}
+Choosing R and C such that
+\begin{align}
+RC  = \frac{1}{2\pi \times 10^{4}}
+\\
+\implies 159 \times 10^{-7}
+\end{align}
+Assuming $R = 5300 \ohm$ and $C=3 \times 10^{-9}F = 3nF$ 
+
+Circuit for open loop transfer function $G\brak{s}$
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11034/ee18btech11034_figb.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11034_figb}
+\end{figure}
+
+At operational amplifier
+\begin{align}
+\frac{V_{p}}{V_{s}} = G_{1}\brak{s}
+\label{eq:ee18btech11034_6}
+\end{align}
+
+At RC circuit
+\begin{align}
+\frac{V_{o}}{V_{p}} = \frac{1}{1+\frac{s}{2\pi \times 10^{4}}}
+\label{eq:ee18btech11034_7}
+\end{align}
+From \eqref{eq:ee18btech11034_5},\eqref{eq:ee18btech11034_6} and \eqref{eq:ee18btech11034_7}
+Open loop gain 
+\begin{align}
+G = \frac{V_{o}}{V_{s}} = \frac{10^{5}}{\brak{1+\frac{s}{2\pi \times 10}}\brak{1+\frac{s}{2\pi \times 10^{4}}}}
+\end{align}
+
+For the feedback gain H
+Choose a resistance network such that 
+\begin{align}
+H = \frac{V_{f}}{V_{o}} = \frac{R_{1}}{R_{1}+R_{2}} \approx 0.01
+\end{align}
+
+Choosig R1 and R2 as
+\begin{align}
+R1 = 10\ohm
+\end{align}
+\begin{align}
+R2 = 1000\ohm
+\end{align}
+
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth/2}{!}{\input{./figs/ee18btech11034/ee18btech11034_figc.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11034_figc}
+\end{figure}
+From Fig.\ref{fig:ee18btech11034_figc}
+\begin{align}
+\frac {V_{f}}{V_{o}} = \frac{10}{10+1000}
+\\
+\implies \approx 0.01
+\end{align}
+
+Circuit for closed loop transfer function 
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11034/ee18btech11034_figd.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11034_figd}
+\end{figure}
+
+\textbf{The above Fig.\ref{fig:ee18btech11034_figd} is feed back circuit for part 1 of question}
+
+\item Circuit design for part 2
+
+As open loop system is not changed for phase margin to be $45\degree$ we change feedback gain H
+
+Required $H = 1.414 \times 10^{-2}$
+
+Choosing R1 and R2 as
+\begin{align}
+R1 = 14\ohm
+\end{align}
+\begin{align}
+R2 = 1000\ohm
+\end{align}
+\begin{align}
+H = \frac{R_{1}}{R_{1}+R_{2}}
+\\
+\implies \frac{14}{14+1000} \approx 1.4 \times 10^{-2}
+\end{align}
+Circuit for closed loop transfer function 
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11034/ee18btech11034_fige.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11034_fige}
+\end{figure}
+
+\textbf{The above Fig.\ref{fig:ee18btech11034_fige} is feed back circuit for part 2 of question}
+
 \end{enumerate}
