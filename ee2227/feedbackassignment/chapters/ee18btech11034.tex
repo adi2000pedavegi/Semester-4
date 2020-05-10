@@ -5,14 +5,6 @@
 \subitem A manufacturing error introducing a second pole at $10^4$ Hz.Find the frequency at which $|GH| = 1$ and phase margin
 \subitem What values of H phase margin is greater than 45\degree
 
-\begin{figure}[ht!]
-	\begin{center}
-		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11034/ee18btech11034_fig.tex}}
-	\end{center}
-	\caption{}
-	\label{fig:ee18btech11034_fig}
-\end{figure}
-
 \solution Part 1 of the question
 For a two-pole amplifier open loop transfer function is 
 
@@ -30,7 +22,7 @@ As given closed loop gain is 100
 \begin{align}
     \abs T = 100
 \end{align}
-For nominal low frequency $|GH| \gg 1$ and from Fig.\ref{fig:ee18btech11034_fig}
+For nominal low frequency $|GH| \gg 1$ 
 \begin{align}
     T = \frac{G}{1+GH}
     \\
@@ -142,6 +134,14 @@ codes/ee18btech11034/ee18btech11034.py
 
 \item Circuit design for part 1
 
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11034/ee18btech11034_fig1.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11034_fig1}
+\end{figure}
+
 As given op-amp is in non-inverting configuration and having a pole at $f_{p} = 10$ Hz
 
 The transfer function of op-amp is
@@ -153,7 +153,7 @@ Required $G(s)$
 \begin{align}
     G\brak{s} = G_{1}\brak{s}\frac{1}{1+\frac{s}{2\pi \times 10^{4}}}
 \end{align}
-So for the error second pole we cascade a RC circuit
+\item So for the error second pole we cascade a RC circuit
 \begin{figure}[ht!]
 	\begin{center}
 		\resizebox{\columnwidth/2}{!}{\input{./figs/ee18btech11034/ee18btech11034_figa.tex}}
@@ -173,7 +173,7 @@ RC  = \frac{1}{2\pi \times 10^{4}}
 \end{align}
 Assuming $R = 5300 \ohm$ and $C=3 \times 10^{-9}F = 3nF$ 
 
-Circuit for open loop transfer function $G\brak{s}$
+\item Circuit for open loop transfer function $G\brak{s}$
 \begin{figure}[ht!]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11034/ee18btech11034_figb.tex}}
@@ -205,7 +205,7 @@ Choose a resistance network such that
 H = \frac{V_{f}}{V_{o}} = \frac{R_{1}}{R_{1}+R_{2}} \approx 0.01
 \end{align}
 
-Choosig R1 and R2 as
+\item Choosig R1 and R2 as
 \begin{align}
 R1 = 10\ohm
 \end{align}
@@ -227,7 +227,7 @@ From Fig.\ref{fig:ee18btech11034_figc}
 \implies \approx 0.01
 \end{align}
 
-Circuit for closed loop transfer function 
+\item Circuit for closed loop transfer function 
 \begin{figure}[ht!]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11034/ee18btech11034_figd.tex}}
@@ -239,6 +239,13 @@ Circuit for closed loop transfer function
 \textbf{The above Fig.\ref{fig:ee18btech11034_figd} is feed back circuit for part 1 of question}
 
 \item Circuit design for part 2
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11034/ee18btech11034_fig2.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11034_fig2}
+\end{figure}
 
 As open loop system is not changed for phase margin to be $45\degree$ we change feedback gain H
 
@@ -256,7 +263,7 @@ H = \frac{R_{1}}{R_{1}+R_{2}}
 \\
 \implies \frac{14}{14+1000} \approx 1.4 \times 10^{-2}
 \end{align}
-Circuit for closed loop transfer function 
+\item Circuit for closed loop transfer function 
 \begin{figure}[ht!]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11034/ee18btech11034_fige.tex}}

@@ -10,18 +10,20 @@
     % We start by placing the blocks
     \node [input, name=input] {};
     \node [sum, right of=input] (sum) {};
-    \node [block, right of=sum] (controller) {$G$};
+    \node [block, right of=sum] (controller) {$\frac{10^{5}}{1+\frac{s}{2\pi \times 10}}$};
+    \node [block, right of=controller] (error) {$\frac{1}{1+\frac{s}{2\pi \times 10^{4}}}$};
     
     % We draw an edge between the controller and system block to 
     % calculate the coordinate u. We need it to place the measurement block. 
    
-    \node [output, right of=controller] (output) {};
-    \node [block, below of=controller] (measurements) {$H$};
+    \node [output, right of=error] (output) {};
+    \node [block, below of=controller] (measurements) {$0.01$};
 
     % Once the nodes are placed, connecting them is easy. 
     \draw [draw,->] (input) -- node[pos=0.99] {$+$} node {$V_{s}$} (sum);
     \draw [->] (sum) -- node {$V_{i}$} (controller);
-    \draw [->] (controller) -- node [name=y] {$V_{o}$}(output);
+    \draw [->] (controller) -- (error);
+    \draw [->] (error) -- node [name=y] {$V_{o}$}(output);
     \draw [->] (y) |- (measurements);
     \draw [->] (measurements) -| node[pos=0.99] {$-$} node [near end] {$V_{f}$} (sum);
 \end{tikzpicture}
