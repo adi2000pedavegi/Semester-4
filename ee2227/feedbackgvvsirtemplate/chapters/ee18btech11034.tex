@@ -141,6 +141,25 @@ H = \frac{R_{1}}{R_{1}+R_{2}} = \frac{10}{10+990} = 0.01
 	\label{fig:ee18btech11034_figc}
 \end{figure}
 
+\item Verification using spice simulation\\
+\solution For $H=0.01$ the closed loop response is
+\begin{align}
+\abs T \approx \frac{1}{H} = 100
+\end{align}
+The following is the netlist file for spice
+\begin{lstlisting}
+spice/ee18btech11034/ee18btech11034_1.net
+\end{lstlisting}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11034/ee18btech11034_spice_result1.eps}
+\caption{}
+\label{fig:ee18btech11034_spice_result1}
+\end{figure}
+The following python code plots the closed loop response verses time
+\begin{lstlisting}
+spice/ee18btech11034/ee18btech11034_spice_result1.py
+\end{lstlisting}
 %
 \item Find $H$ such that $PM = 45\degree$.
 \\
@@ -217,4 +236,23 @@ For the required feedback gain H the feedback circuit changes
 	\caption{}
 	\label{fig:ee18btech11034_fige}
 \end{figure}
+\item Verification using spice simulation\\
+\solution For $H=0.014$ the closed loop response is
+\begin{align}
+\abs T \approx \frac{1}{H} = 70.72
+\end{align}
+The following is the netlist file for spice
+\begin{lstlisting}
+spice/ee18btech11034/ee18btech11034_2.net
+\end{lstlisting}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11034/ee18btech11034_spice_result2.eps}
+\caption{}
+\label{fig:ee18btech11034_spice_result2}
+\end{figure}
+The following python code plots the closed loop response verses time
+\begin{lstlisting}
+spice/ee18btech11034/ee18btech11034_spice_result2.py
+\end{lstlisting}
 \end{enumerate}

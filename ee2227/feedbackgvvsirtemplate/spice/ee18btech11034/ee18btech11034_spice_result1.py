@@ -16,7 +16,7 @@ plt.plot(data[:,0],data[:,1])
 plt.grid()
 plt.xlabel("time in sec")
 plt.ylabel("Closed loop system magnitude response")
-plt.title('Spice simulation for $PM=51$ degrees')
+plt.title('Spice simulation for $PM=51.9$ degrees')
 
 
 
