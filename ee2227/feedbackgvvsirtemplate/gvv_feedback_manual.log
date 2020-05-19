@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.4.12)  19 MAY 2020 11:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2020.4.12)  19 MAY 2020 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1355,23 +1355,43 @@ File: ./figs/ee18btech11034/ee18btech11034_1.eps Graphic file (type eps)
 File: ./figs/ee18btech11034/ee18btech11034_spice_result1.eps Graphic file (type
  eps)
 
-<./figs/ee18btech11034/ee18btech11034_spice_result1.eps> [2]
+<./figs/ee18btech11034/ee18btech11034_spice_result1.eps>
+File: ./figs/ee18btech11034/ee18btech11034_spice_verify1.eps Graphic file (type
+ eps)
+
+<./figs/ee18btech11034/ee18btech11034_spice_verify1.eps> [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: ./figs/ee18btech11034/ee18btech11034_2.eps Graphic file (type eps)
 
 <./figs/ee18btech11034/ee18btech11034_2.eps>
-(./figs/ee18btech11034/ee18btech11034_figd.tex)
-(./figs/ee18btech11034/ee18btech11034_fige.tex) [3]
+(./figs/ee18btech11034/ee18btech11034_figd.tex) [3]
+(./figs/ee18btech11034/ee18btech11034_fige.tex)
 File: ./figs/ee18btech11034/ee18btech11034_spice_result2.eps Graphic file (type
  eps)
 
 <./figs/ee18btech11034/ee18btech11034_spice_result2.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 262--264
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ./figs/ee18btech11034/ee18btech11034_spice_verify2.eps Graphic file (type
+ eps)
+<./figs/ee18btech11034/ee18btech11034_spice_verify2.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--293
 
  []
 
-)
+
+Underfull \vbox (badness 5431) has occurred while \output is active []
+
+ [4])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 270.
- [4
+
+[5
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 270.
@@ -1383,12 +1403,12 @@ Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
  ) 
 Here is how much of TeX's memory you used:
- 32477 strings out of 492983
- 694700 string characters out of 6134922
- 907560 words of memory out of 5000000
- 35423 multiletter control sequences out of 15000+600000
+ 32485 strings out of 492983
+ 695074 string characters out of 6134922
+ 914560 words of memory out of 5000000
+ 35429 multiletter control sequences out of 15000+600000
  74877 words of font info for 189 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,15n,67p,511b,1067s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (4 pages, 75264 bytes).
+Output written on gvv_feedback_manual.dvi (5 pages, 80024 bytes).

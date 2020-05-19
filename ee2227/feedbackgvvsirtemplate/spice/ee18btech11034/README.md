@@ -5,3 +5,5 @@ PROCEDURE FOR RUNNING SPICE SIMULATONS
 4. Import the .dat file into ee18btech11034_spice_result1.py and run the file.
 5. Plot of step response verses time is observed
 6. ee18btech11034_2.net,ee18btech11034_2.dat and ee18btech11034_spice_result2.py are files for feedback gain 0.014
+7. ee18btech11034_spice_verify1.py gives the verification of circuit output step response through python for H = 0.01
+8. Similarly ee18btech11034_spice_verify2.py is verification for H = 0.014
