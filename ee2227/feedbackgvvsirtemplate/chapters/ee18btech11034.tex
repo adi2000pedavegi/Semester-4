@@ -156,7 +156,7 @@ spice/ee18btech11034/ee18btech11034_1.net
 \caption{}
 \label{fig:ee18btech11034_spice_result1}
 \end{figure}
-The following python code plots the closed loop response verses time
+The following python code plots the closed loop step response verses time
 \begin{lstlisting}
 spice/ee18btech11034/ee18btech11034_spice_result1.py
 \end{lstlisting}
@@ -251,7 +251,7 @@ spice/ee18btech11034/ee18btech11034_2.net
 \caption{}
 \label{fig:ee18btech11034_spice_result2}
 \end{figure}
-The following python code plots the closed loop response verses time
+The following python code plots the closed loop step response verses time
 \begin{lstlisting}
 spice/ee18btech11034/ee18btech11034_spice_result2.py
 \end{lstlisting}
@@ -259,4 +259,23 @@ Follow the instructions in below file for running spice files
 \begin{lstlisting}
 spice/ee18btech11034/README.md
 \end{lstlisting}
+\item Check for unstability\\
+\solution For a closed loop system to be unstable PM of GH is negative\\
+\begin{align}
+PM < 0\degree\\
+\implies \phase{G(f)H(f)} &< -180\degree
+\end{align}
+For the given GH
+\begin{align}
+\phase{G(f)H(f)} = \phase{G(f)}
+\\
+\implies -\tan^{-1}\brak{\frac{f}{10}} -\tan^{-1}\brak{\frac{f}{10^{4}}}
+\end{align}
+At $f = \infty$
+\begin{align}
+\phase{G(f)} = -90\degree -90\degree = -180\degree
+\end{align}
+So there will be no positive f where $\phase{G(f)} < -180\degree$
+
+Hence,the system is stable for any positive feedback gain H
 \end{enumerate}
